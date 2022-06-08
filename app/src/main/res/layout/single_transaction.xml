@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardInfo"
+        android:layout_width="match_parent"
+        android:paddingBottom="5dp"
+        android:layout_height="80dp"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ShopName"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@id/rlstaff"
+                android:text="Date :"
+                android:textSize="10sp" />
+            <TextView
+                android:id="@+id/txtUserNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtName"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@id/rlstaff"
+
+                android:text="Amount :"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/txtStaffAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtUserNumber"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@id/rlstaff"
+
+                android:text="To/From :"
+                android:textSize="10sp" />
+
+            <TextView
+
+                android:id="@+id/ShopName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@id/rlstaff"
+
+                android:text="Transaction Id"
+                android:textColor="#de4500"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ShopName"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@id/txtName"
+
+                android:text="01/01/2000"
+                android:textColor="#000"
+                android:textSize="10sp" />
+            <TextView
+                android:id="@+id/Number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtName"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@id/txtUserNumber"
+
+                android:text="Rs.200"
+                android:textColor="#000"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/City"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtUserNumber"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@id/txtStaffAddress"
+
+                android:text="Gorakhpur"
+                android:textColor="#3498db"
+                android:textSize="10sp" />
+
+            <RelativeLayout
+                android:id="@+id/rlstaff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_centerVertical="true"
+                >
+
+                <ImageView
+                    android:id="@+id/imgStaff"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="1dp"
+                    android:src="@drawable/plane" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
